@@ -1,0 +1,39 @@
+{
+    "id": "org.mikael",
+    "sdk": 2,
+    "name": {
+        "en": "Yo Mama"
+    },
+    "description": {
+        "en": "This app tells you Yo Mama jokes"
+    },
+    "category": "tools",
+    "version": "1.0.0",
+    "compatibility": ">=1.5.0",
+    "author": {
+        "name": "Mikael Johansson",
+        "email": "mikael.johansson@klippanlan.net"
+    },
+    "permissions": [
+      "homey:manager:speech-output",
+      "homey:manager:speech-input"
+    ],
+    "speech": {   
+        "en": {
+          "element": {
+            "yoMama": {
+              "type": "regex",
+              "value": "((on\\s)?yomama|mama|moma|yo mama|random yo mama|random yo moma)"
+            }
+          },
+          "group": {
+            "main": {
+              "set": "yoMama",
+              "ordered": false,
+              "allowDisconnect": true,
+              "capturingGroup": true
+            }
+          }
+        }
+      },
+}
