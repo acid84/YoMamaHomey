@@ -19,21 +19,21 @@
       "homey:manager:speech-input"
     ],
     "speech": {   
-        "en": {
-          "element": {
-            "yoMama": {
-              "type": "regex",
-              "value": "((on\\s)?yomama|mama|moma|yo mama|random yo mama|random yo moma)"
-            }
-          },
-          "group": {
-            "main": {
-              "set": "yoMama",
-              "ordered": false,
-              "allowDisconnect": true,
-              "capturingGroup": true
-            }
+      "en": {
+        "element": {
+          "yoMama": {
+            "type": "regex",
+            "value": "((on\\s)?yomama|mama|moma|yo mama|random yo mama|random yo moma)"
+          }
+        },
+        "group": {
+          "main": {
+            "set": "yoMama",
+            "ordered": false,
+            "allowDisconnect": true,
+            "capturingGroup": true
           }
         }
-      },
+      }
+    }
 }
